@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Swis721LtExBTLight';
+    src: url('swissel.eot');
+    src: url('swissel.eot') format('embedded-opentype'),
+         url('swissel.woff') format('woff'),
+         url('swissel.ttf') format('truetype'),
+         url('swissel.svg#Swis721LtExBTLight') format('svg');
+}

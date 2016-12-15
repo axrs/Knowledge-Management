@@ -1,0 +1,63 @@
+.toggler {
+    float: right;
+    width: 6%;
+    z-index: 100;
+    text-align: center;
+    cursor: pointer;
+    color: #fff;
+    margin: 0;
+    padding: 9px;
+    font-size:16px;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.toggler:hover {
+    text-shadow: #000000 0.2em 0.2em 0.2em;
+}
+
+.toggler:active {
+}
+
+/*  Hide details checkbox  */
+.details_btn {
+    position: absolute;
+    z-index: 100;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    cursor: pointer;
+}
+
+/*  Content is hidden if button  still unchecked*/
+input.details_btn ~ div.content, input.details_btn ~ div.tree {
+    overflow: hidden;
+    max-height:0;
+    padding:0px !important;
+    display:block;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+/*  Animate content height and opacity*/
+input.details_btn:checked ~ div.content,input.details_btn:checked ~ div.tree {
+    max-height: 9999px;
+    margin:10px !important;
+    display:inline-block;
+}
+
+input.details_btn:checked ~ .toggler{
+    -moz-transform: scale(1) rotate(180deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+    -webkit-transform: scale(1) rotate(180deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+    -o-transform: scale(1) rotate(180deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+    -ms-transform: scale(1) rotate(180deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+    transform: scale(1) rotate(180deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+}

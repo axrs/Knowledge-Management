@@ -1,0 +1,15 @@
+RewriteEngine On
+RewriteBase /
+
+# Disable rewriting for existing files or directories
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteRule ^(includes|fonts|uploads|images|scripts|styles|js|css)(/.*)?$ - [L]
+RewriteCond %{REQUEST_URI} ^/(includes|fonts|uploads|images|styles|scripts|js|css)/?.*$ [NC]
+
+RewriteRule ^.*$ - [NC,L] # Item exists so don't rewrite
+
+# Redirect all other requests to index.php
+RewriteRule ^index.php$ - [L]
+RewriteRule ^(.*)$ index.php [L,QSA]

@@ -1,0 +1,66 @@
+/* ----------------------------------------------------------------------------------------------------------------------------
+== ICONS STYLES
+** ---------------------------------------------------------------------------------------------------------------------------- */
+
+ul.icons {
+    padding:0;
+    margin:0;
+}
+
+.icons li:before,
+.icons li:after,
+.icons li a:before,
+.icons li a:after {
+    content:"";
+    position:absolute;
+    top:50%;
+    left:0%;
+}
+
+.icons li a:before,
+.icons li a:after {
+    margin:-8px 0 0;
+    background:#c55500;
+}
+
+.icons li a:hover:before,
+.icons li a:focus:before,
+.icons li a:active:before {
+    background:#730800;
+}
+
+/* HOME
+------------------------------------------------------------------------------------------------------------------------------- */
+.icons .home a:before {
+    left:15px;
+    border-style:solid;
+    border-color:transparent;
+    border-width:8px 7px;
+    border-bottom-color:#666666;
+    margin-top:-16px;
+    background:transparent;
+}
+
+.icons .home a:after {
+    left:17px;
+    width:2px;
+    height:4px;
+    border-style:solid;
+    border-color:#666666 #666666 transparent;
+    border-width:3px 4px 0;
+    margin-top:0;
+    background:transparent;
+}
+
+.icons .home a:hover:before,
+.icons .home a:focus:before,
+.icons .home a:active:before {
+    border-bottom-color:#ffffff;
+    background:transparent;
+}
+
+.icons .home a:hover:after,
+.icons .home a:focus:after,
+.icons .home a:active:after {
+    border-color:#ffffff #ffffff transparent;
+}

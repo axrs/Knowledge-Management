@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'OrbitronMedium';
+    src: url('../fonts/orbitron-medium-webfont.eot');
+    src: url('../fonts/orbitron-medium-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/orbitron-medium-webfont.woff') format('woff'),
+    url('../fonts/orbitron-medium-webfont.ttf') format('truetype'),
+    url('../fonts/orbitron-medium-webfont.svg#OrbitronMedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'OrbitronBold';
+    src: url('../fonts/orbitron-bold-webfont.eot');
+    src: url('../fonts/orbitron-bold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/orbitron-bold-webfont.woff') format('woff'),
+    url('../fonts/orbitron-bold-webfont.ttf') format('truetype'),
+    url('../fonts/orbitron-bold-webfont.svg#OrbitronBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Swis721ExBTRoman';
+    src: url('../fonts/Swis721/swisse.eot');
+    src: url('../fonts/Swis721/swisse.eot') format('embedded-opentype'),
+         url('../fonts/Swis721/swisse.woff') format('woff'),
+         url('../fonts/Swis721/swisse.ttf') format('truetype'),
+         url('../fonts/Swis721/swisse.svg#Swis721ExBTRoman') format('svg');
+}
+
+@font-face {
+    font-family: 'Swis721ExBT';
+    src: url('../fonts/Swis721/swisseb.eot');
+    src: url('../fonts/Swis721/swisseb.eot') format('embedded-opentype'),
+         url('../fonts/Swis721/swisseb.woff') format('woff'),
+         url('../fonts/Swis721/swisseb.ttf') format('truetype'),
+         url('../fonts/Swis721/swisseb.svg#Swis721ExBTBold') format('svg');
+}
+
+@font-face {
+    font-family: 'Swis721LtExBT';
+    src: url('../fonts/Swis721/swissel.eot');
+    src: url('../fonts/Swis721/swissel.eot') format('embedded-opentype'),
+         url('../fonts/Swis721/swissel.woff') format('woff'),
+         url('../fonts/Swis721/swissel.ttf') format('truetype'),
+         url('../fonts/Swis721/swissel.svg#Swis721LtExBTLight') format('svg');
+}
+

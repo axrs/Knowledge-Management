@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Swis721ExBTBold';
+    src: url('swisseb.eot');
+    src: url('swisseb.eot') format('embedded-opentype'),
+         url('swisseb.woff') format('woff'),
+         url('swisseb.ttf') format('truetype'),
+         url('swisseb.svg#Swis721ExBTBold') format('svg');
+}

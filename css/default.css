@@ -1,0 +1,553 @@
+@import "fonts.css";
+@import "reset.css";
+@import "font-cadcoder.css";
+@import "skeleton.css";
+@import "menu.css";
+@import "container.css";
+@import "color.css";
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* GENERAL */
+blockquote {
+    padding: 10px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Swis721ExBT', Arial, sans-serif;
+    border-bottom: 1px solid #bababa;
+    display: block;
+    margin: 15px 0 10px 0;
+    padding: 0;
+}
+
+pre.code {
+    overflow: auto;
+}
+
+.box > h1 a, .box >  h2 a, .box >  h3 a, .box >  h4 a, .box >  h5 a, .box >  h6 a {
+    color: #dedede;
+}
+
+.corporate a {
+    font-family: 'Swis721ExBT', Arial, sans-serif;
+    text-shadow: #000000 0.2em 0.2em 0.2em !important;
+}
+
+.corporate a .cadcoder-icon-CADCoder {
+    font-size: 30px;
+}
+
+h1:after, h2:after, h3:after, h4:after, h5:after, h6:after {
+    content: '';
+    display: block;
+    position: relative;
+    width: 50px;
+    height: 0;
+    border: 1px solid #202020;
+    left: 0;
+    top: 2px;
+}
+
+p {
+    margin-top: 5px;
+}
+
+img {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 0 10px 10px 0;
+}
+
+figure {
+    float: left;
+    margin: 0 10px 10px 0;
+}
+
+/* FORM STYLING - Buttons */
+a[href $='.pdf']:before {
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: inherit;
+    -webkit-font-smoothing: antialiased;
+
+    /* sprites.less reset */
+    display: inline;
+    width: auto;
+    height: auto;
+    line-height: normal;
+    vertical-align: baseline;
+    background-image: none;
+    background-position: 0% 0%;
+    background-repeat: repeat;
+    margin-top: 0;
+    content: "\f0c6";
+    padding-right:5px;
+    margin-right: 5px;
+    border-right:1px solid #dedede;
+}
+
+.button, a.button,
+a[href $='.pdf'] {
+    position: relative;
+    margin: 5px;
+    padding: 5px 20px;
+    font: bold 11px 'Swis721LtExBT', Helvetica, Arial, sans-serif;
+    cursor: pointer;
+    outline: none;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+
+a[href $='.pdf']:after,
+.button:after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    right: 5px;
+    top: 4px;
+}
+
+.readmore {
+    float: right;
+}
+
+/* BOXES */
+
+.box {
+    margin-top: 10px;
+}
+
+.box > h1, .box > h2, .box > h3, .box > h4, .box > h5, .box > h6 {
+    margin: 0;
+    padding: 5px 10px;
+    display: block;
+    font-family: 'Swis721ExBTRoman', Arial, sans-serif;
+    font-weight: bold;
+}
+
+.toolbox {
+    display: inline-block;
+    width: 100%;
+}
+
+.toolbox .details {
+    clear: left;
+}
+
+.toolbox .details.right {
+    clear: right;
+}
+
+/* CONTENT BOX */
+.content > p:first-of-type {
+    margin-top: 10px;
+}
+
+.content p:last-of-type {
+    margin-bottom: 0;
+}
+
+.content img {
+    max-width: 100%;
+    height: auto;
+}
+
+.content, .tree {
+    padding: 10px;
+}
+
+.content ul, .content ol {
+    overflow: hidden;
+    zoom: 1;
+}
+
+.content ul.flat li, .content ol.flat li {
+    display: inline;
+    list-style-type: none;
+}
+
+.content li {
+    margin: 5px 20px 5px 5px;
+    position: relative;
+    left: 15px;
+}
+
+.content ol, .content ul {
+    margin-left: 15px;
+}
+
+.content .flat li {
+    left: 0;
+    padding-right: 10px;
+    float: left;
+}
+
+.content li:before {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 5px;
+    border: 1px solid #8c8c8c;
+    background: #f2f2f2;
+    left: -20px;
+    position: absolute;
+    top: 6px;
+    border-radius: 2px;
+}
+
+.content .flat li:first-child:before {
+    content: '';
+    display: none;
+}
+
+.section:last-of-type {
+    margin-bottom: 10px;
+}
+
+.content .flat li:before {
+    content: '';
+    display: block;
+    width: 2px;
+    height: 80%;
+    border: 1px solid #8c8c8c;
+    background: #f2f2f2;
+    left: -12px;
+    position: absolute;
+    top: 0;
+    border-radius: 2px;
+}
+
+.toolbox .details {
+    margin: 5px;
+    float: left;
+}
+
+.toolbox.clean {
+    background: none !important;
+    border: none !important;
+}
+
+.preview .content {
+    height: 100px;
+}
+
+.preview .toolbox {
+    height: 60px;
+}
+
+.preview .content, .preview .toolbox {
+    white-space: nowrap;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}
+
+.preview h1, .preview h2, .preview h3,
+.preview h4, .preview h5, .preview h6 {
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 767px) {
+    img {
+        display: block;
+        margin: 0 auto;
+        float: none;
+    }
+}
+
+.box > h1:after, .box > h2:after, .box > h3:after, .box > h4:after, .box > h5:after, .box > h6:after {
+    display: none;
+}
+
+.box > form {
+    margin: 0;
+    padding: 0;
+}
+
+.error i, .info i {
+    font-size: 50px;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.error i {
+    color: #F26716;
+}
+
+i.cadcoder-icon-CADCoder {
+    color: #666666;
+}
+
+.section {
+    float: left;
+}
+
+a.feature {
+    display: block;
+    width: 100%;
+    float: left;
+}
+
+a.feature img {
+    display: block;
+    max-width: 90%;
+    float: none;
+    margin: 5px auto;
+}
+
+form {
+    display: inline-block;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+form:only-child {
+    padding: 0;
+}
+
+form .full {
+    width: 100%;
+}
+
+form .full.required {
+    width: 95%;
+    margin: 0;
+}
+
+fieldset {
+    line-height: 3em;
+    margin-top: 10px;
+    padding-top: 5px;
+    border: 1px solid #dedede;
+}
+
+fieldset:nth-child(even) {
+    background-color: #dedede;
+}
+
+.box > form.right, .box > form.right, .box > form.right
+.box > form.right, .box > form.right, .box > form.right {
+    position: relative;
+    right: 0;
+    width: auto;
+}
+
+form label {
+    width: 20%;
+    text-align: right;
+    float: left;
+    clear: left;
+}
+
+form input, form textarea {
+    width: 60%;
+    clear: right;
+    float: left;
+    display: inline-block;
+    max-width: 100%;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box; /* Firefox, other Gecko */
+    box-sizing: border-box; /* Opera/IE 8+ */
+}
+
+form > i, fieldset > i {
+    float: right;
+    padding: 5px 0;
+}
+
+form label:after {
+    content: ":";
+}
+
+form button, form > a, fieldset > a {
+    clear: left;
+    float: right;
+}
+
+form button:first-of-type {
+    margin-right: 15% !important;
+}
+
+form button i, form a i {
+    padding: 0;
+    margin: 0;
+}
+
+.content.toolbox {
+    float: none;
+    width: auto;
+}
+
+form.packed {
+    width: 100%;
+}
+
+form.packed a {
+    margin: 5px;
+    padding: 10px;
+    float: right;
+}
+
+form.full button:first-of-type {
+    margin-right: 5% !important;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    fieldset label, fieldset input, fieldset textarea {
+        width: 20%;
+    }
+
+    fieldset input, fieldset textarea {
+        width: 60%;
+    }
+
+    fieldset button {
+        width: 15%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    label {
+        width: 75px;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    label {
+        width: 75px;
+    }
+}
+
+.tree {
+    display: block !important;
+    overflow: auto !important;
+    white-space: nowrap;
+}
+
+.tree ul {
+    padding-top: 20px;
+    position: relative;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+}
+
+.tree li {
+    float: left;
+    text-align: center;
+    list-style-type: none;
+    position: relative;
+    padding: 20px 5px 0 5px;
+
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+}
+
+/*We will use ::before and ::after to draw the connectors*/
+
+.tree li::before, .tree li::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 50%;
+    border-top: 1px solid #084887;
+    width: 50%;
+    height: 20px;
+}
+
+.tree li::after {
+    right: auto;
+    left: 50%;
+    border-left: 1px solid #084887;
+}
+
+/*We need to remove left-right connectors from elements without
+any siblings*/
+.tree li:only-child::after, .tree li:only-child::before {
+    display: none;
+}
+
+/*Remove space from the top of single children*/
+.tree li:only-child {
+    padding-top: 0;
+}
+
+/*Remove left connector from first child and
+right connector from last child*/
+.tree li:first-child::before, .tree li:last-child::after {
+    border: 0 none;
+}
+
+/*Adding back the vertical connector to the last nodes*/
+.tree li:last-child::before {
+    border-right: 1px solid #084887;
+    border-radius: 0 5px 0 0;
+    -webkit-border-radius: 0 5px 0 0;
+    -moz-border-radius: 0 5px 0 0;
+}
+
+.tree li:first-child::after {
+    border-radius: 5px 0 0 0;
+    -webkit-border-radius: 5px 0 0 0;
+    -moz-border-radius: 5px 0 0 0;
+}
+
+/*Time to add downward connectors from parents*/
+.tree ul ul::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    border-left: 1px solid #084887;
+    width: 0;
+    height: 20px;
+}
+
+.tree li a {
+    border: 1px solid #084887;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Swis721LtExBT', arial, verdana, tahoma;
+    font-size: 10px;
+    display: inline-block;
+
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    font-weight: bold;
+
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+}
+
+/*Time for some hover effects*/
+/*We will apply the hover effect the the lineage of the element also*/
+.tree li a:hover, .tree li a:hover+ul li a {
+    background: #084887;
+    color: #fff;
+    border: 1px solid #94a0b4;
+    font-weight: bold;
+}
+
+/*Connector styles on hover*/
+.tree li a:hover+ul li::after,
+.tree li a:hover+ul li::before,
+.tree li a:hover+ul ul::before,
+.tree li a:hover+ul ul::before {
+    border-color: rgb(8, 72, 135);
+}

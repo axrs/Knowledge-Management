@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Swis721ExBTRoman';
+    src: url('swisse.eot');
+    src: url('swisse.eot') format('embedded-opentype'),
+         url('swisse.woff') format('woff'),
+         url('swisse.ttf') format('truetype'),
+         url('swisse.svg#Swis721ExBTRoman') format('svg');
+}
